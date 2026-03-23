@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection Festive — Key Swims</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">Key <span>Swims</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="festif.html" class="active">Collection Festive</a></li>
+        <li><a href="classique.html">Collection Classique</a></li>
+      </ul>
+      <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero festif">
+    <span class="page-hero-icon">&#127881;</span>
+    <h1>Collection Festive</h1>
+    <p>Des couvre-chefs rayonnants pour illuminer vos événements les plus mémorables.</p>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="index.html">Accueil</a> <span>&#8250;</span> Collection Festive
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Nos 5 modèles festifs</h2>
+      <p>Chaque pièce est pensée pour faire de vous la star de la soirée.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Produit 1 -->
+      <div class="product-card">
+        <div class="product-image festif">
+          <span class="product-badge badge-popular">Populaire</span>
+          <span class="product-emoji">&#128081;</span>
+        </div>
+        <div class="product-info">
+          <h4>L'Éclat Doré</h4>
+          <p class="product-desc">Couvre-chef orné de fils d'or et de perles, idéal pour les galas et cérémonies.</p>
+          <div class="product-footer">
+            <span class="product-price">89 &euro;</span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produit 2 -->
+      <div class="product-card">
+        <div class="product-image festif">
+          <span class="product-badge badge-new">Nouveau</span>
+          <span class="product-emoji">&#127800;</span>
+        </div>
+        <div class="product-info">
+          <h4>Rose de Bal</h4>
+          <p class="product-desc">Orné de roses en soie, ce modèle romantique est parfait pour les mariages.</p>
+          <div class="product-footer">
+            <span class="product-price">75 &euro;</span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produit 3 -->
+      <div class="product-card">
+        <div class="product-image festif">
+          <span class="product-emoji">&#10024;</span>
+        </div>
+        <div class="product-info">
+          <h4>Nuit Étoilée</h4>
+          <p class="product-desc">Broderies scintillantes sur velours noir, pour des soirées inoubliables.</p>
+          <div class="product-footer">
+            <span class="product-price">95 &euro;</span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produit 4 -->
+      <div class="product-card">
+        <div class="product-image festif">
+          <span class="product-badge badge-limited">Édition limitée</span>
+          <span class="product-emoji">&#127872;</span>
+        </div>
+        <div class="product-info">
+          <h4>Fête Champêtre</h4>
+          <p class="product-desc">Un mélange de rubans et de fleurs séchées pour un style champêtre chic.</p>
+          <div class="product-footer">
+            <span class="product-price">68 &euro; <span class="old-price">82 &euro;</span></span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produit 5 -->
+      <div class="product-card">
+        <div class="product-image festif">
+          <span class="product-badge badge-new">Nouveau</span>
+          <span class="product-emoji">&#128142;</span>
+        </div>
+        <div class="product-info">
+          <h4>Cristal de Fête</h4>
+          <p class="product-desc">Cristaux Swarovski sur organza, l'accessoire ultime pour briller.</p>
+          <div class="product-footer">
+            <span class="product-price">120 &euro;</span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <h2>Restez informée</h2>
+    <p>Recevez nos nouveautés et offres exclusives directement dans votre boîte mail.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+      <input type="email" placeholder="Votre adresse e-mail" required>
+      <button type="submit">S'inscrire</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Key <span>Swims</span></a>
+        <p>Des couvre-chefs artisanaux qui célèbrent la féminité et l'élégance, pour chaque moment de vie.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="festif.html">Festive</a></li>
+          <li><a href="classique.html">Classique</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Livraison</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Key Swims. Tous droits réservés.
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection Classique — Key Swims</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">Key <span>Swims</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="festif.html">Collection Festive</a></li>
+        <li><a href="classique.html" class="active">Collection Classique</a></li>
+      </ul>
+      <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero classique">
+    <span class="page-hero-icon">&#9728;&#65039;</span>
+    <h1>Collection Classique</h1>
+    <p>Des couvre-chefs raffinés et intemporels pour un style quotidien plein d'assurance.</p>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="index.html">Accueil</a> <span>&#8250;</span> Collection Classique
+  </div>
+
+  <!-- PRODUCTS -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Nos 5 modèles classiques</h2>
+      <p>L'élégance au quotidien, sans compromis sur le style.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- Produit 1 -->
+      <div class="product-card">
+        <div class="product-image classique">
+          <span class="product-badge badge-popular">Populaire</span>
+          <span class="product-emoji">&#127913;</span>
+        </div>
+        <div class="product-info">
+          <h4>Le Canotier Parisien</h4>
+          <p class="product-desc">Un canotier revisité en paille tressée avec ruban de satin marine.</p>
+          <div class="product-footer">
+            <span class="product-price">55 &euro;</span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produit 2 -->
+      <div class="product-card">
+        <div class="product-image classique">
+          <span class="product-badge badge-new">Nouveau</span>
+          <span class="product-emoji">&#129506;</span>
+        </div>
+        <div class="product-info">
+          <h4>Béret Riviera</h4>
+          <p class="product-desc">Un béret en laine mérinos douce, parfait pour les promenades automnales.</p>
+          <div class="product-footer">
+            <span class="product-price">42 &euro;</span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produit 3 -->
+      <div class="product-card">
+        <div class="product-image classique">
+          <span class="product-emoji">&#128082;</span>
+        </div>
+        <div class="product-info">
+          <h4>Fedora Élégance</h4>
+          <p class="product-desc">Feutre italien souple, une silhouette intemporelle pour toutes les saisons.</p>
+          <div class="product-footer">
+            <span class="product-price">65 &euro;</span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produit 4 -->
+      <div class="product-card">
+        <div class="product-image classique">
+          <span class="product-badge badge-limited">Édition limitée</span>
+          <span class="product-emoji">&#127890;</span>
+        </div>
+        <div class="product-info">
+          <h4>Turban Naturel</h4>
+          <p class="product-desc">Lin bio drapé avec nœud latéral, un look bohème et sophistiqué.</p>
+          <div class="product-footer">
+            <span class="product-price">48 &euro; <span class="old-price">58 &euro;</span></span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produit 5 -->
+      <div class="product-card">
+        <div class="product-image classique">
+          <span class="product-emoji">&#129510;</span>
+        </div>
+        <div class="product-info">
+          <h4>Capeline Côte d'Azur</h4>
+          <p class="product-desc">Grande capeline en paille naturelle, protection solaire et allure glamour.</p>
+          <div class="product-footer">
+            <span class="product-price">59 &euro;</span>
+            <button class="btn-cart" title="Ajouter au panier">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <h2>Restez informée</h2>
+    <p>Recevez nos nouveautés et offres exclusives directement dans votre boîte mail.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+      <input type="email" placeholder="Votre adresse e-mail" required>
+      <button type="submit">S'inscrire</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Key <span>Swims</span></a>
+        <p>Des couvre-chefs artisanaux qui célèbrent la féminité et l'élégance, pour chaque moment de vie.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="festif.html">Festive</a></li>
+          <li><a href="classique.html">Classique</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Livraison</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Key Swims. Tous droits réservés.
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,15 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Page Test</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Swims — Couvre-chefs d'exception</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bienvenue sur mon site test !</h1>
-    <p>Ceci est une page HTML simple hébergée gratuitement.</p>
-    <button onclick="showMessage()">Clique ici</button>
 
-    <script src="script.js"></script>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">Key <span>Swims</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="festif.html">Collection Festive</a></li>
+        <li><a href="classique.html">Collection Classique</a></li>
+      </ul>
+      <button class="mobile-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Collection 2026</div>
+      <h1>L'art du couvre-chef <em>réinventé</em></h1>
+      <p>Découvrez Key Swims, des couvre-chefs artisanaux conçus pour sublimer chaque moment — des grandes occasions aux journées les plus simples.</p>
+      <div class="hero-buttons">
+        <a href="festif.html" class="btn btn-primary">Collection Festive &#10024;</a>
+        <a href="classique.html" class="btn btn-outline">Collection Classique &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section">
+    <div class="section-header">
+      <h2>Nos Collections</h2>
+      <p>Deux univers, une même passion pour l'élégance et le savoir-faire artisanal.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="categories-grid">
+      <a href="festif.html" class="category-card">
+        <div class="category-bg"></div>
+        <div class="category-icon">&#127881;</div>
+        <div class="category-content">
+          <div class="category-tag">5 modèles</div>
+          <h3>Collection Festive</h3>
+          <p>Des créations éclatantes pour vos événements, mariages et célébrations.</p>
+          <span class="category-link">Découvrir &#8594;</span>
+        </div>
+      </a>
+
+      <a href="classique.html" class="category-card">
+        <div class="category-bg"></div>
+        <div class="category-icon">&#9728;&#65039;</div>
+        <div class="category-content">
+          <div class="category-tag">5 modèles</div>
+          <h3>Collection Classique</h3>
+          <p>Des pièces raffinées et intemporelles pour un style quotidien irréprochable.</p>
+          <span class="category-link">Découvrir &#8594;</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features-section">
+    <div class="section-header">
+      <h2>Pourquoi Key Swims ?</h2>
+      <p>Un engagement qualité à chaque étape.</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">&#9997;&#65039;</div>
+        <h4>Fait main</h4>
+        <p>Chaque pièce est confectionnée à la main par nos artisans avec le plus grand soin.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#127807;</div>
+        <h4>Matériaux nobles</h4>
+        <p>Nous sélectionnons des matières premières durables et de première qualité.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#128230;</div>
+        <h4>Livraison soignée</h4>
+        <p>Un emballage raffiné et une livraison rapide partout en France.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section">
+    <h2>Restez informée</h2>
+    <p>Recevez nos nouveautés et offres exclusives directement dans votre boîte mail.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+      <input type="email" placeholder="Votre adresse e-mail" required>
+      <button type="submit">S'inscrire</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Key <span>Swims</span></a>
+        <p>Des couvre-chefs artisanaux qui célèbrent la féminité et l'élégance, pour chaque moment de vie.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Collections</h4>
+        <ul>
+          <li><a href="festif.html">Festive</a></li>
+          <li><a href="classique.html">Classique</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informations</h4>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Livraison</a></li>
+          <li><a href="#">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Key Swims. Tous droits réservés.
+    </div>
+  </footer>
+
 </body>
 </html>
